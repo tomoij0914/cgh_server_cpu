@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- HTMLヘッダ，webページのメタ情報 -->
+<head>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title>File ppload</title>
+</head>
+
+<body>
+    <h1>Upload CSV file of parameter</h1>
+    <!-- POST：ブラウザからサーバーにデータを送信するための形式 -->
+    <!-- multipart/form-data形式でサーバーにデータを送信 -->
+    <form method="POST" enctype="multipart/form-data">
+        <!-- セキュリティ対策に必要 -->
+        {% csrf_token %}
+        <!-- forms.py フォームの表示に必要 -->
+        {{ form.as_p }}
+      <button type="submit">Upload</button>
+    </form>
+</body>
+
+</html>

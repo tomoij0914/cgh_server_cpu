@@ -1,0 +1,9 @@
+<h1>Finished calculating CGH</h1>
+<!-- widthのみを指定した場合は縦横比は保存される -->
+<h4>Designed CGH: </h4>
+<img src="/media/documents/{{cgh_name}}" width="30%" border="0" /><br>
+<a href="{% url 'file_download' %}">Download</a><br><br>
+<h4 style="display:inline;">Number of iteration: </h4>{{iteration}}</p>
+<h4 style="display:inline;">Best uniformity: </h4>{{best_unif}}</p>
+<h4 style="display:inline;">Calculation time: </h4>{{calc_time}}</p>
+

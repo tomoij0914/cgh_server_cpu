@@ -1,0 +1,11 @@
+<h1>Start calculating CGH</h1>
+<a href="{% url 'run' %}">Run</a><br>
+<h4>Target image: </h4>
+<img src="/media/documents/{{trg_name}}" width="30%" border="0" /><br><br>
+<h4 style="display:inline;">File name: </h4>{{fname}}</p>
+<h4 style="display:inline;">Number of diffraction point: </h4>{{number_diffraction_point}}</p>
+<h4 style="display:inline;">Size of cgh (pixel): </h4>{{size_cgh}}*{{size_cgh}}</p>
+<h4 style="display:inline;">Type of input beam (0:Flat top, 1:Gaussian): </h4>{{type_input_beam}}</p>
+<h4 style="display:inline;">Beam radius of input beam (pixel): </h4>{{beam_radius_input_beam}}</p>
+<h4 style="display:inline;">Number of iteration: </h4>{{number_iteration}}</p>
+<h4 style="display:inline;">Alpha of WGS: </h4>{{alpha_wgs}}</p>
